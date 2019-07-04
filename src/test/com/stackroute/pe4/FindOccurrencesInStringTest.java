@@ -20,20 +20,20 @@ public class FindOccurrencesInStringTest {
         findOccurrencesInString=null;
     }
     @Test
-    public void givenStringInputShouldReturnAMapOfOccurrences()
+    public void givenStringInputShouldReturnOccurrencesFOundPosition()
     {
         String actual=findOccurrencesInString.findOccurrences("She sells seashells by the seashore","se");
         assertEquals("Found at: 4 - 6\n" + "Found at: 10 - 12\n" + "Found at: 27 - 29\n",actual);
 
     }
     @Test
-    public void givenStringShouldReturnAMapOfOccurrences()
+    public void givenEmptyStringShouldReturnEmptyString()
     {
         String actual=findOccurrencesInString.findOccurrences("","se");
         assertEquals("",actual);
     }
     @Test
-    public void givenStrShouldReturnAMapOfOccurrences()
+    public void givenNullStringShouldReturnGivenNull()
     {
         String actual=findOccurrencesInString.findOccurrences(null,null);
         assertNull("Given Null String as Input",actual);

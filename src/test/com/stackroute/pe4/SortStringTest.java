@@ -22,7 +22,7 @@ public class SortStringTest {
         sortString=null;
     }
     @Test
-    public void givenStringInputShouldReturnAMapOfOccurrences()
+    public void givenStringInputShouldReturnListOfSortedString()
     {
         List<String> expected=new ArrayList<>();
         expected.add("be");
@@ -38,14 +38,14 @@ public class SortStringTest {
     }
 
     @Test
-    public void givenNullInputShouldReturnAMapOfOccurrences()
+    public void givenNullStringInputShouldReturnNull()
     {
 
         List<String> actual=sortString.sortText(null);
         assertNull("Passed a null",actual);
     }
     @Test
-    public void givenEmptyInputShouldReturnAMapOfOccurrences()
+    public void givenEmptyInputShouldReturnNull()
     {
 
         List<String> actual=sortString.sortText("");

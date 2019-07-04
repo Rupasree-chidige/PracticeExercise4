@@ -29,14 +29,14 @@ public class FrequencyOfOccurencesTest {
 
     }
     @Test
-    public void givenNullStringInputShouldReturnAMapOfOccurrences()
+    public void givenNullStringInputShouldReturnNull()
     {
 
        int  actual=frequencyOfOccurences.countChars(null,'\0');
         assertNotNull("Passed a Null",actual);
      }
     @Test
-    public void givenEmptyStringInputShouldReturnAMapOfOccurrences()
+    public void givenEmptyStringInputShouldReturnNull()
     {
 
         int actual=frequencyOfOccurences.countChars("",'\0');

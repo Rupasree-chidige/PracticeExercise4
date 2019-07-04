@@ -19,7 +19,7 @@ public class StringTransposeTest {
         stringTranspose=null;
     }
     @Test
-    public void givenStringInputShouldReturnReplacedString()
+    public void givenStringInputShouldReturnTransposedString()
     {
 
         String actual=stringTranspose.transpose("daily dry");
@@ -27,7 +27,7 @@ public class StringTransposeTest {
 
     }
     @Test
-    public void givenStringInputShouldReturnReplacedSing()
+    public void givenStringInputShouldReturnTransposeOfString()
     {
 
         String actual=stringTranspose.transpose("this is that and is reversed");
@@ -35,7 +35,7 @@ public class StringTransposeTest {
 
     }
     @Test
-    public void givenStringInputShouldReturnRepledSing()
+    public void givenEmptyStringShouldReturnEmptyString()
     {
 
         String actual=stringTranspose.transpose("");
